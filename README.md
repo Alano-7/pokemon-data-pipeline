@@ -58,10 +58,15 @@ The installation and setup:
     }
     ```
 
-4.  **Run the Pipeline**
-    ```bash
-    python Pipeline.py
-    ```
+** THIS PROJECT IS FULLY CONTAINERIZED WITH DOCKER.**
+THE ENTIRE APPLICATION CAN BE LAUNCHED WITH A SINGLE COMMAND:
+docker-compose up
+
+├── Dockerfile           - Defines the application container
+├── docker-compose.yml   - Orchestrates the multi-container setup
+├── requirements.txt     - Python dependencies
+└── Pipeline.py          - Main ETL logic
+
 
 
 Learning goals:
@@ -72,6 +77,9 @@ This project served as a hands-on exercise to build and understand:
 - Data wrangling and transformation with pandas.
 - Database management with SQLAlchemy and MySQL.
 - Professional practices like error handling and logging.
+
+<img width="711" height="355" alt="image" src="https://github.com/user-attachments/assets/bce4a111-a894-47bc-955f-37382db8daf5" />
+***The final Pokémon data stored in the MySQL database after the ETL process.*
 
 
 *This project is for educational purposes ONLY and is not affiliated with or endorsed by Pokémon.*
